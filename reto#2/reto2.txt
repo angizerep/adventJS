@@ -1,9 +1,9 @@
 ¡Ayuda al elfo a listar los regalos!
 
 ¡Menudo lío! Un elfo está ayudando a Santa Claus. 
- que le vendría ya ordenado de cada regalo cuantas 
- unidades debe conseguir... 
- ¡y le ha llegado una carta! ¡Ayúdale!
+que le vendría ya ordenado de cada regalo cuantas 
+unidades debe conseguir... 
+¡y le ha llegado una carta! ¡Ayúdale!
 
 
 Te ha llegado una carta ✉️ con todos los regalos que debes preparar. 
