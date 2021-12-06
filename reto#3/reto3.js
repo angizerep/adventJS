@@ -1,39 +1,52 @@
 // export default function listGifts(letter) {
-function listGifts(letter) {
+function isValid(letter) {
 
   let words = letter.trim().split(/\s+/)
-  let wordList = {}
+  let resp = false;
 
   for (let i = 0; i < words.length; i++) {
-0
-    if ( !words[i].includes("[") || !words[i].includes("{") && 
-          ( words[i].charAt(0).includes("(") && words[i].charAt(words[i].length-1).includes(")") && words[i].length > 2 ) ){
-            console.log('TRUE')
-      let currentWordCount = wordList[words[i]]
-      let count = currentWordCount ? currentWordCount : 0
-      wordList[words[i]] = count + 1
+    if ( words[i].includes("[") || words[i].includes("{") ) {
+        resp = false
+        break
+    } else if ( ( words[i].charAt(0).includes("(") && 
+      !words[i].charAt(words[i].length-1).includes(")") ) && words[i].length > 2 )  {
+        resp = false
+        break
+    } else if ( words[i].includes("()") ){
+      resp = false
+      break
+    }else if ( words[i].charAt(0).includes("(") && 
+      words[i].charAt(words[i].length-1).includes(")") && words[i].length > 2 ){
+        resp = true
+    } else if ( words[i].charAt(0).includes("(") &&  
+      words[i].charAt(words[i].length-1).includes(")") && words[i].length < 3 ){
+        resp = false
+        break
+    }else {
+        resp = true
     }
   }
-  return wordList;  
+  return resp
 }
 
 // const carta = 'bici coche (balón) bici coche peluche'
 // const carta = '(muñeca) consola bici'
 // const carta = 'bici coche (balón bici coche'
-const carta = 'peluche (bici [coche) bici coche balón'
+// const carta = 'peluche (bici [coche) bici coche balón'
 // const carta = '() bici'
+// const carta = "bici (balón bici coche"
+const carta = '(()) bici'
+// const carta = '"(a() bici (a)"'
 
-const regalos = listGifts(carta)
+const regalos = isValid(carta)
 
 console.log(regalos)
 
 /**
-
 "bici coche (balón) bici coche peluche" // -> ✅
 "(muñeca) consola bici" // ✅
 "bici coche (balón bici coche" // -> ❌
 "peluche (bici [coche) bici coche balón" // -> ❌
 "(peluche {) bici" // -> ❌
 "() bici" // ❌
-
 */
