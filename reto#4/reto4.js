@@ -3,23 +3,25 @@ function createXmasTree(height) {
 
   const heightAux = height
 
+  let arbolAux = ''
   for( let i = 1; i <= height; i++){
 
-    let str = '_'.repeat( height - i );
-    let str2 = '*'. repeat( i * 2 - 1)
+    const str = '_'.repeat( height - i );
+    const str2 = '*'. repeat( i * 2 - 1)
 
-    console.log(str + str2 + str);
+    arbolAux = arbolAux.concat( str, str2, str,'\n' )
 
     if ( i === height ){
       let str3 = '_'.repeat( heightAux - 1 );
       let str4 = '#'
 
-      console.log(str3 + str4 + str3 );
-      console.log(str3 + str4 + str3 );
+      arbolAux = arbolAux.concat( str3, str4, str3,'\n' )
+      arbolAux = arbolAux.concat( str3, str4, str3 )
     }
 
   }
-  return ''
+  return arbolAux
+
 }
 
 const arbol = createXmasTree (2);
