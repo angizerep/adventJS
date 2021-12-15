@@ -1,5 +1,5 @@
-// export default function getMinJump(obstacles) {
-function getMinJump(obstacles) {
-        // ¡No olvides compartir tu solución en redes!
-    return true
+// export default function wrapGifts(gifts) {
+function wrapGifts(gifts) {
+    // ¡No olvides compartir tu solución en redes!
+    return []
 }
