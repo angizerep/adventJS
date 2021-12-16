@@ -5,7 +5,6 @@ que da sean lo más óptimos posible.
 Un amigo que tiene un Tesla nos ha explicado 
 la mejor forma. ¡A ver si sacamos una función para aseguarnos!
 
-
 ¡Estamos haciendo los últimos ajustes para el trineo de Santa Claus!
 
 Como ya sabes, el trineo es volador y estamos ajustando 
