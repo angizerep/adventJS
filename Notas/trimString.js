@@ -1,0 +1,1 @@
+let words = letter.trim().split(/\s+/)
