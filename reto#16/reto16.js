@@ -1,11 +1,7 @@
 // export default function decodeNumber(symbols) {
 function decodeNumber(symbols) {
-    // ¡No olvides compartir tu solución en redes!
-
     var res = 0
-
     let arrayDecodes = decodes(symbols)
-
     if ( arrayDecodes.length > 0 ){
         for( let i = 0 ; i < arrayDecodes.length ; i++ ){
     
@@ -21,7 +17,6 @@ function decodeNumber(symbols) {
     else {
         res = NaN
     }
-
     return res
 }
 
@@ -32,7 +27,6 @@ function decodes(arr) {
     const dosPuntos = 10
     const puntoComa = 50
     const exclamacion = 100
-
     var arrayUpdate = []
 
     for ( let i = 0 ; i < arr.length ; i ++ ){
