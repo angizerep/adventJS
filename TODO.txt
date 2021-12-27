@@ -13,7 +13,7 @@ Reto 12 ->
 Reto 13 -> 
 Reto 14 -> 
 Reto 15 -> 
-Reto 16 -> 
+Reto 16 -> Listo
 Reto 17 -> 
 Reto 18 -> Listo
 Reto 19 -> 
