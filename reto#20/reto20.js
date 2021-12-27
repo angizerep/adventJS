@@ -24,10 +24,8 @@ function pangram(letter) {
         const letra = consonantes[i].toUpperCase()
 
         if ( letterMayuscula.includes( letra ) ){
-            // console.log('Yes')
             flagConsonantes = true
         }else{
-            // console.log('NOPE')
             flagConsonantes = false
             break
         }
@@ -39,10 +37,8 @@ function pangram(letter) {
         if (flagAes === false ){
             if ( letterMayuscula.includes( letra ) ){
                 flagAes = true
-                // console.log('flagAes ', flagAes)
             }else{
                 flagAes = false
-                // console.log('flagAes ', flagAes)
                 break
             }
         }
@@ -54,10 +50,8 @@ function pangram(letter) {
         if ( flagEes === false ){
             if ( letterMayuscula.includes( letra ) ){
                 flagEes = true
-                // console.log('flagEes ', flagEes)
             }else{
                 flagEes = false
-                // console.log('flagEes ', flagEes)
                 break
             }
         }
@@ -70,11 +64,9 @@ function pangram(letter) {
             if ( letterMayuscula.includes( letra ) ){
                 console.log('If IF')
                 flagIes = true
-                // console.log('flagIes ', flagIes)
             }else{
                 console.log('Else')
                 flagIes = false
-                // console.log('flagIes ', flagIes)
                 break
             }
         }
@@ -87,10 +79,8 @@ function pangram(letter) {
         if ( flagOes === false ){
             if ( letterMayuscula.includes( letra ) ){
                 flagOes = true
-                // console.log('flagOes ', flagOes)
             }else{
                 flagOes = false
-                // console.log('flagOes ', flagOes)
                 break
             }
         }
@@ -102,21 +92,12 @@ function pangram(letter) {
         if ( flagUes === false ) {
             if ( letterMayuscula.includes( letra ) ){
                 flagUes = true
-                // console.log('flagUes ', flagUes)
             }else{
                 flagUes = false
-                // console.log('flagUes ', flagUes)
                 break
             }
         }
     }
-
-    // console.log('flagAes flagAes ', flagAes)
-    // console.log('flagEes flagEes ', flagEes)
-    // console.log('flagIes flagIes ', flagIes)
-    // console.log('flagOes flagOes ', flagOes)
-    // console.log('flagUes flagUes ', flagUes)
-    // console.log('flagConsonantes flagConsonantes ', flagConsonantes)
 
     if ( flagConsonantes === true && flagAes === true && flagEes === true &&
         flagIes === true && flagOes === true && flagUes === true ){
@@ -126,7 +107,6 @@ function pangram(letter) {
             flagGlobal = false
         }
 
-    // ¡No olvides compartir tu solución en redes!
     return flagGlobal
 }
 
